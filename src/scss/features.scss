@@ -11,11 +11,13 @@
 
   /* .features__body */
   &__body {
-    margin: 0px rem(-15);
-    padding: rem(50) rem(40);
-    display: flex;
-
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    
+    @media (min-width:$mobile){
+      margin: 0px rem(-15);
+      padding: rem(50) rem(40);
+      display: flex;
+    }
   }
 
   /* .features__column */
@@ -24,7 +26,8 @@
     /* .features__column_text */
     &_text {
       flex: 0 1 35%;
-      padding: rem(46) rem(62) rem(37) 0;
+      padding: rem(46) 0 rem(37);
+      @include adaptiveValue("padding-right", 62, 20);
       border-right: 1px solid #E8E8E8;
     }
 
@@ -58,13 +61,18 @@
     flex: 0 1 33.3333333333333%;
     display: flex;
     align-items: center;
-
+    
     min-height: rem(126);
-
-    padding: 0px 30px 0px 80px;
-
+    
+    padding: 0px rem(30) 0px 0;
+    @include adaptiveValue("padding-left", 80, 20);
+    
     font-size: rem(11);
     color: $grayColor;
     line-height: math.div(30, 11);
+    
+    @media (max-width:$tablet){
+      flex: 0 1 50%;
+    }
   }
 }

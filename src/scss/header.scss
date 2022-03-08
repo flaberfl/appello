@@ -47,7 +47,7 @@
     overflow: auto;
     background-color: #fff;
     transition: left 0.3s ease 0s;
-    // z-index: 10;
+    z-index: 0;
 
     // Плашка для мобильного меню
     &::before {
@@ -58,7 +58,7 @@
       width: 100%;
       height: rem(100);
       background-color: #0D0D33;
-      z-index: 100;
+      z-index: 10;
 
       transition: left 0.3s ease 0s;
     }
