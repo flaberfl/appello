@@ -3,11 +3,25 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
+	height: rem(60);
+	width: rem(174);
+	align-items: center;
+	justify-content: center;
+	// padding: 0px 0px;
+
+	border-radius: rem(4);
+	background-color: $blueColor;
+
+	font-size: rem(15);
+	line-height: math.div(30 , 15);
+	transition: background-color 0.3s ease 0s;
+
 	@media (any-hover: hover) {
 		&:hover {
+			background-color: #58a6ed;
 		}
 	}
+
 	&._fw {
 		width: 100%;
 	}

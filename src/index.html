@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__intro intro">
+				<div class="intro__container">
+					<div class="intro__body">
+						<h1 class="intro__title">Leaders in Software Design & Development</h1>
+						<div class="intro__text">Establishing a technology company takes a strong software team to deliver on what
+							needs to be done.</div>
+						<a href="#" class="intro__button button">View our work</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="page__features features">
+				<div class="features__container">
+					<div class="features__body">
+
+						<div class="features__column features__column_text">
+							<h3 class="features__title">Your reliable web and app development partner</h3>
+							<div class="features__subtitle">We make successful products that turn great ideas into user-friendly
+								solutions for consumers and businesses.</div>
+						</div>
+
+						<div class="features__column features__column_list">
+							<ul class="features__items">
+								<li class="features__item">Completely tailored software.</li>
+								<li class="features__item">Daily support with project manager.</li>
+								<li class="features__item">Projects delivered on time, always.</li>
+								<li class="features__item">Testing and quality assurance.</li>
+								<li class="features__item">Professional marketing expertise.</li>
+								<li class="features__item">Transparent costs and support.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
