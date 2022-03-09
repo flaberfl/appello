@@ -63,9 +63,12 @@
       transition: left 0.3s ease 0s;
     }
 
-    .menu-open &,
-    &::before {
+    .menu-open & {
       left: 0;
+
+      &::before {
+        left: 0;
+      }
     }
   }
 
@@ -117,7 +120,8 @@
 
     @media (any-hover: hover) {
       &:hover {
-        text-decoration: underline;;
+        text-decoration: underline;
+        ;
       }
     }
   }
@@ -130,12 +134,12 @@
     border-radius: rem(4);
     border: 1px solid #000;
     background-color: transparent;
-    
+
     font-size: rem(30);
     line-height: math.div(30, 16);
 
     transition: border-radius 0.3s ease 0s;
-    
+
     @media (any-hover: hover) {
       &:hover {
         border-radius: rem(20);
