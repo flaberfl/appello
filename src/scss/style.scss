@@ -152,5 +152,6 @@ body {
 @import "footer";
 
 // Подключение стилей отдельных страниц
-@import "intro";
-@import "features";
+@import "block/intro";
+@import "block/features";
+@import "block/where-are-you";
