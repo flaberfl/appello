@@ -2,11 +2,7 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	height: rem(60);
-	width: rem(174);
-	align-items: center;
-	justify-content: center;
+	display: inline-block;
 
 	border-radius: rem(4);
 	background-color: $blueColor;
@@ -19,6 +15,11 @@
 		&:hover {
 			background-color: #58a6ed;
 		}
+	}
+
+	@media (max-width: $mobileSmall){
+		  width: 100%;
+			text-align: center;
 	}
 
 	&._fw {
