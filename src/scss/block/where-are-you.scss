@@ -1,8 +1,14 @@
 .where-are-you {
-  padding: rem(150) 0;
+  padding: rem(155) 0;
+  
+  @media (max-width:$tablet){
+    padding: rem(100) 0;
+  }
 
   // .where-are-you__container
-  &__container {}
+  &__container {
+    text-align: center;
+  }
 
   // .where-are-you__block-text
   &__block-text {
@@ -10,11 +16,14 @@
   }
 
   // .where-are-you__tabs-block
-  &__tabs-block {}
+  &__tabs-block {
+    margin: 0px 0px rem(8) 0px;
+  }
 
   // .where-are-you__button
   &__button {
     padding: rem(15) rem(51);
+
   }
 }
 
@@ -33,11 +42,12 @@
   &__title {
     margin: 0 rem(52);
 
+    cursor: pointer;
     font-size: rem(23);
     line-height: 135%;
     color: #000;
 
-    &._active {
+    &._tab-active {
       color: $blueColor;
     }
 
@@ -73,6 +83,7 @@
 .item-tabs-block {
   padding: rem(38) rem(60) rem(40) rem(40);
   height: 100%;
+  text-align: left;
 
   border: 1px solid #E8E8E8;
 

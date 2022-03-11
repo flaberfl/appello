@@ -39,6 +39,10 @@
     /* .features__column_list */
     &_list {
       flex: 0 1 65%;
+
+      @media (max-width:$mobile){
+         padding: 0px 0px rem(20) 0px; 
+      }
     }
   }
 
