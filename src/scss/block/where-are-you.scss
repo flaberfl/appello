@@ -4,6 +4,10 @@
   @media (max-width:$tablet){
     padding: rem(100) 0;
   }
+  
+  @media (max-width:$mobile){
+    padding: rem(70) 0; 
+  }
 
   // .where-are-you__container
   &__container {
@@ -12,7 +16,17 @@
 
   // .where-are-you__block-text
   &__block-text {
-    margin: 0px 0px rem(90) 0px;
+    // margin: 0px 0px rem(90) 0px;
+
+    @include adaptiveValue("margin-bottom", 90, 20);
+    
+    // @media (max-width:$tablet){
+    //   margin: 0px 0px rem(70) 0px;
+    // }
+    
+    // @media (max-width:$mobile){
+    //   margin: 0px 0px rem(50) 0px;
+    // }
   }
 
   // .where-are-you__tabs-block
@@ -35,15 +49,17 @@
     align-items: center;
     justify-content: center;
 
-    margin: 0px 0px rem(53) 0px;
+    @include adaptiveValue("margin-bottom", 53, 20);
   }
-
+  
   // .tabs-block-where-are-you__title
   &__title {
-    margin: 0 rem(52);
+    @include adaptiveValue("margin-right", 52, 20);
+    @include adaptiveValue("margin-left", 52, 20);
 
     cursor: pointer;
-    font-size: rem(23);
+    @include adaptiveValue("font-size", 23, 18);
+    // font-size: rem(23);
     line-height: 135%;
     color: #000;
 
@@ -73,7 +89,14 @@
   &__column {
     flex: 0 1 50%;
     padding: 0px rem(20);
-    margin: 0px 0px rem(45) 0px;
+    // margin: 0px 0px rem(45) 0px;
+
+    @include adaptiveValue("margin-bottom", 45, 10);
+    
+    @media (max-width:$mobile){
+      flex: 0 1 100%;
+      // margin: 0px 0px rem(25) 0px;
+    }
   }
 
   // .tabs-block-where-are-you__item
@@ -84,15 +107,24 @@
   padding: rem(38) rem(60) rem(40) rem(40);
   height: 100%;
   text-align: left;
-
+  
   border: 1px solid #E8E8E8;
+  
+  @media (max-width:$mobile){
+    padding: rem(20);
+  }
 
   // .item-tabs-block__title
   &__title {
     margin: 0px 0px rem(28) 0px;
-
+    
     font-size: rem(19);
     line-height: 126%;
+    
+    @media (max-width:$mobile){
+      font-size: rem(17);
+      margin: 0px 0px rem(18) 0px;
+    }
   }
 
   // .item-tabs-block__text
@@ -100,5 +132,9 @@
     font-size: rem(16);
     line-height: 175%;
     color: $grayColor;
+    
+    @media (max-width:$mobile){
+      font-size: rem(14);
+    }
   }
 }

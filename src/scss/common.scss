@@ -7,8 +7,16 @@
     line-height: 104%;
     color: #000;
 
+    @include adaptiveValue("font-size", 41, 36);
+
     &:not(:last-child) {
       margin: 0px 0px rem(40) 0px;
+    }
+    
+    @media (max-width:$mobile){
+      &:not(:last-child) {
+        margin: 0px 0px rem(20) 0px;
+      } 
     }
 
   }

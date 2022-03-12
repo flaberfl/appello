@@ -7,10 +7,8 @@
     padding: rem(184) 0px rem(210);
   }
   @media (max-width:$mobile){
-    padding: rem(120) 0px rem(160);
-      
+    padding: rem(120) 0px rem(140);
   }
-
 
 
   /* .intro__body */
@@ -18,6 +16,10 @@
     max-width: rem(430);
 
     color: #fff;
+
+    @media (max-width:$mobileSmall){
+       max-width: none; 
+    }
   }
 
   /* .intro__title */
