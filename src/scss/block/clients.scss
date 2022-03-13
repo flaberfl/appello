@@ -1,9 +1,6 @@
 .clients {
   padding: rem(82) 0 0;
 
-  /* .clients__container */
-  &__container {}
-
   /* .clients__block-text */
   &__block-text {
     margin: 0px 0px rem(72) 0px;
@@ -42,7 +39,6 @@
     display: flex;
     justify-content: center;
     padding: rem(50) 0px;
-
     align-items: center;
 
     @media (max-width:$mobile) {
