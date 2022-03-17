@@ -27,7 +27,7 @@
     /* .features__column_text */
     &_text {
       flex: 0 1 35%;
-      padding: rem(46) 0 rem(37);
+      padding: rem(47) 0 rem(37);
       @include adaptiveValue("padding-right", 62, 20);
       border-right: 1px solid #E8E8E8;
 
@@ -70,8 +70,8 @@
   &__item {
     flex: 0 1 33.333333%;
 
-    @include adaptiveValue("padding-top", 40, 20);
-    @include adaptiveValue("padding-left", 70, 20);
+    @include adaptiveValue("padding-top", 45, 20);
+    @include adaptiveValue("padding-left", 80, 20);
     padding-right: rem(30);
     
     font-size: rem(11);

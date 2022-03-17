@@ -1,5 +1,5 @@
 .where-are-you {
-  padding: rem(155) 0;
+  padding: rem(154) 0 rem(150);
 
   @media (max-width:$tablet) {
     padding: rem(100) 0;
@@ -75,7 +75,7 @@
     flex: 0 1 50%;
     padding: 0px rem(20);
 
-    @include adaptiveValue("margin-bottom", 45, 10);
+    @include adaptiveValue("margin-bottom", 41, 10);
 
     @media (max-width:$mobile) {
       flex: 0 1 100%;
@@ -84,7 +84,7 @@
 }
 
 .item-tabs-block {
-  padding: rem(38) rem(60) rem(40) rem(40);
+  padding: rem(38) rem(83) rem(41) rem(40);
   height: 100%;
   text-align: left;
 
@@ -96,7 +96,7 @@
 
   // .item-tabs-block__title
   &__title {
-    margin: 0px 0px rem(28) 0px;
+    margin: 0px 0px rem(25) 0px;
 
     font-size: rem(19);
     line-height: 126%;
@@ -110,7 +110,7 @@
   // .item-tabs-block__text
   &__text {
     font-size: rem(16);
-    line-height: 175%;
+    line-height: 187%;
     color: $grayColor;
 
     @media (max-width:$mobile) {
