@@ -27,14 +27,14 @@
     row-gap: rem(101);
     justify-items: center;
     align-items: center;
-    
+
     background-color: #FAFAFA;
-    
+
     @media (max-width:$tablet) {
       row-gap: rem(50);
     }
-    
-    @media (max-width:$mobile){
+
+    @media (max-width:$mobile) {
       padding: rem(55) 0;
     }
   }
