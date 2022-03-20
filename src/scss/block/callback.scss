@@ -1,0 +1,22 @@
+.callback {
+  background: url('@img/bg-callback.jpg') center no-repeat;
+  height: 100vh;
+
+  /* .callback__container */
+  &__container {}
+
+  /* .callback__form */
+  &__form {
+    position: relative;
+    top: rem(380);
+    margin: 0 auto;
+
+    max-width: rem(600);
+    padding: rem(31) rem(50);
+
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+  }
+}

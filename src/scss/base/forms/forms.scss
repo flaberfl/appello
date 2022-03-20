@@ -1,19 +1,61 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-	&__row {
+
+	>*:not(:nth-last-child(-n+2)) {
+		margin: 0px 0px rem(30) 0px;
 	}
-	&__column {
+
+	&__row {}
+
+	&__column {}
+
+	&__title {
+		max-width: rem(330);
+
+		text-align: left;
+
+		&:not(:last-child) {
+			margin: 0px 0px rem(34) 0px;
+		}
+
+		font-size: rem(26);
+		line-height: math.div(38, 26);
+		letter-spacing: -0.4px;
 	}
+
 	&__line {
+		&:nth-last-child(-n+2) {
+			margin: 0px 0px rem(37) 0px;
+		}
 	}
+
 	&__input {
+		width: 100%;
+		height: rem(60);
+		border: 1px solid #e8e8e8;
+		border-radius: 4px;
+		padding: rem(18) rem(20) rem(18);
+
+		font-size: rem(12);
+		font-weight: 700;
+		line-height: math.div(24, 12);
+
+		&_area {
+			min-height: rem(120);
+			padding-top: 9px;
+
+			resize: none;
+		}
 	}
+
 	&__button {
+		padding: rem(15) rem(44);
 	}
-	&__error {
-	}
+
+	&__error {}
 }
+
 //</FORM>
 
 // <BUTTONS>
@@ -34,7 +76,7 @@
 
 // <SELECT>
 // Снипет (HTML): sel
-// @import "select";
+@import "select";
 
 // <RATING>
 // Снипет (HTML): rating
