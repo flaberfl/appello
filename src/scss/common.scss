@@ -3,11 +3,11 @@
 .block-text {
 
   &__title {
-    font-size: rem(41);
+    // font-size: rem(41);
     line-height: 104%;
     color: #000;
 
-    @include adaptiveValue("font-size", 41, 36);
+    @include adaptiveValue("font-size", 41, 30);
 
     &:not(:last-child) {
       margin: 0px 0px rem(40) 0px;
@@ -22,7 +22,6 @@
     &_white {
       color: #fff;
     }
-
   }
 
   &_center {
