@@ -140,6 +140,11 @@ body {
 	}
 }
 
+[class*="_grid"] {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
 // Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";
@@ -160,3 +165,4 @@ body {
 @import "block/partners";
 @import "block/callback";
 @import "block/approved";
+@import "block/resources";

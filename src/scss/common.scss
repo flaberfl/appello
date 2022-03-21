@@ -3,7 +3,6 @@
 .block-text {
 
   &__title {
-    // font-size: rem(41);
     line-height: 104%;
     color: #000;
 
@@ -12,11 +11,11 @@
     &:not(:last-child) {
       margin: 0px 0px rem(40) 0px;
     }
-    
-    @media (max-width:$mobile){
+
+    @media (max-width:$mobile) {
       &:not(:last-child) {
         margin: 0px 0px rem(20) 0px;
-      } 
+      }
     }
 
     &_white {
