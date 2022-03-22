@@ -48,18 +48,18 @@ function initSliders() {
 	bildSliders();
 
 	// Перечень слайдеров
-	if (document.querySelector('.swiper')) {
-		new Swiper('.swiper', {
+	if (document.querySelector('.kickstart__slider')) {
+		new Swiper('.kickstart__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
-		
-			effect: 'fade',
-			autoplay: {
-				delay: 300,
-				disableOnInteraction: false,
-			},
-	
+			modules: [Navigation, Autoplay],
+
+			// effect: 'fade',
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
 			observer: true,
 			observeParents: true,
 			slidesPerView: 5,
@@ -69,17 +69,17 @@ function initSliders() {
 			//touchRatio: 0,
 			//simulateTouch: false,
 			loop: true,
-			//preloadImages: false,
-			//lazy: true,
+			//preloadImages: false, -при лейзи
+			//lazy: true,  -при лейзи
 			// Dotts
 			//pagination: {
 			//	el: '.slider-quality__pagging',
-			//	clickable: true,
+			// clickable: true,
 			//},
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_next',
-				prevEl: '.about__more .more__item_prev',
+				nextEl: '.kickstart__slide_next',
+				prevEl: '.kickstart__slide_prev',
 			},
 			/*
 			breakpoints: {
