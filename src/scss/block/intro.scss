@@ -2,14 +2,14 @@
   padding: rem(240) 0px rem(270);
   background: url('@img/bg-header.jpg') center 0 no-repeat;
   background-color: #0D0D33;
-  
-  @media (max-width:$tablet){
+
+  @media (max-width:$tablet) {
     padding: rem(184) 0px rem(210);
   }
-  @media (max-width:$mobile){
+
+  @media (max-width:$mobile) {
     padding: rem(120) 0px rem(140);
   }
-
 
   /* .intro__body */
   &__body {
@@ -17,8 +17,8 @@
 
     color: #fff;
 
-    @media (max-width:$mobileSmall){
-       max-width: none; 
+    @media (max-width:$mobileSmall) {
+      max-width: none;
     }
   }
 
@@ -39,7 +39,7 @@
     }
 
     font-size: rem(11);
-    line-height: math.div(30 , 11);
+    line-height: math.div(30, 11);
   }
 
   &__button {

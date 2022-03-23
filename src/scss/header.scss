@@ -16,10 +16,6 @@
     top: 0;
   }
 
-  .menu-open & {
-    // background-color: rgba(13, 13, 51, .8);
-  }
-
   /* .header__container */
   &__container {
     display: flex;
@@ -136,11 +132,14 @@
       font-size: rem(13);
       color: #fff;
       line-height: math.div(30, 13);
+
+      transition: color 0.3s ease 0s;
     }
 
 
     @media (any-hover: hover) {
       &:hover {
+        color: $grayColor;
         text-decoration: underline;
         ;
       }
@@ -159,11 +158,13 @@
     font-size: rem(30);
     line-height: math.div(30, 16);
 
-    transition: border-radius 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 
     @media (any-hover: hover) {
       &:hover {
         border-radius: rem(20);
+        color: $grayColor;
+        border-color: $grayColor;
       }
     }
 

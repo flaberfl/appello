@@ -1,6 +1,13 @@
 .clients {
   padding: rem(83) 0 0;
-
+  
+  @media (max-width:$tablet){
+    padding: rem(60) 0 0;
+  }
+  
+  @media (max-width:$mobile){
+    padding: rem(40) 0 0;
+  }
   /* .clients__block-text */
   &__block-text {
     margin: 0px 0px rem(74) 0px;

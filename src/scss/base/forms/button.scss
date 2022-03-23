@@ -3,6 +3,7 @@
 
 .button {
 	display: inline-block;
+	min-width: rem(166);
 
 	border-radius: rem(4);
 	background-color: $blueColor;

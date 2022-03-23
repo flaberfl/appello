@@ -1,20 +1,20 @@
 .approved {
-  padding: 154px 0px 195px;
+  padding: rem(154) 0px rem(195);
 
   background-color: #FAFAFA;
 
   @media (max-width:$tablet) {
-    padding: 84px 0px 95px;
+    padding: rem(84) 0px rem(95);
   }
 
   @media (max-width:$mobile) {
-    padding: 54px 0;
+    padding: rem(54) 0;
   }
 
   &__body {
-    margin: 0px 0 0px 104px;
-    padding: 0px 30px 0px 0px;
-    max-width: 500px;
+    margin: 0px 0 0px rem(104);
+    padding: 0px rem(30) 0px 0px;
+    max-width: rem(500);
 
     @media (max-width:$mobile) {
       margin: 0 auto;
@@ -37,6 +37,7 @@
   &__icons {
     display: flex;
     align-items: center;
+    margin: 0px -15px;
 
     @media (max-width:$mobile) {
       flex-wrap: wrap;
@@ -45,8 +46,7 @@
   }
 
   &__icon {
-    &:not(:last-child) {
-      margin: 0px rem(30) 0px 0px;
-    }
+    align-items: center;
+    margin: 0px 15px;
   }
 }
